@@ -1,0 +1,12 @@
+{
+  "name": "flift",
+  "version": "0.0.0",
+  "description": "flift",
+  "main": "esm-bridge.js",
+  "author": {
+    "name": ""
+  },
+  "dependencies": {
+    "esm": "^3.2.25"
+  }
+}
