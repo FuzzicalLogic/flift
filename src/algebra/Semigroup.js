@@ -4,7 +4,7 @@ import * as C from './';
 /** The key name as defined by convention and the spec. */
 const SEMIGROUP_KEY = 'concat';
 
-const { curry, get, oo: { pair } } = F;
+const { curry, oo: { get, pair } } = F;
 let getPair = curry(pair)(SEMIGROUP_KEY);
 let getConcat = get(SEMIGROUP_KEY);
 let getConstructor = get('constructor');

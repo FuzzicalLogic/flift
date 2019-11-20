@@ -3,7 +3,7 @@ import * as F from '../lambda';
 /** The key name as defined by convention and the spec. */
 const FUNCTOR_KEY = 'map';
 
-const { curry, get, oo: { pair } } = F;
+const { curry, oo: { get, pair } } = F;
 let getPair = curry(pair)(FUNCTOR_KEY);
 let getMap = get(FUNCTOR_KEY);
 let getConstructor = get('constructor');
