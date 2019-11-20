@@ -8,4 +8,4 @@ import { reduce } from '../reduce';
  * @returns {Function} Curried function that accepts a list of Key/Value pairs
  * and returns an object.
  */
-export const mergeAll = (...xs) => reduce(merge, Object.create(null));
+export const mergeAll = reduce(merge, Object.create(null));
