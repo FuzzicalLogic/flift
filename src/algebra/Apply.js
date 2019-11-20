@@ -1,27 +1,33 @@
-import { pipeSync } from '../lambda';
-import { Functor } from './Functor';
+import * as F from '../lambda';
+import * as C from './';
 
+/** The key name as defined by convention and the spec. */
+const AP_KEY = 'drop';
+
+const { curry, oo: { get, pair } } = F;
+let getPair = curry(pair)(AP_KEY);
+let getAp = get(AP_KEY);
+let getConstructor = get('constructor');
+
+const { Functor } = C;
 /**
  * Creates a Chain that implements the Functor specification.
  * 
  * @param {any} g 
  */
-export const Apply = (g = x => f => f(x)) => {
-	let algebra = {
-		apply: g,
-		map: x => pipeSync(g(x), exported)
-	}
-	let exported = x => ({
-		chain: algebra.chain(x),
-		map: algebra.map(x)
-	});
-	exported.algebra = algebra;
-	return exported;
+const Apply = {
+    [Symbol.hasInstance]: o => {
+        if ((o instanceof Functor)
+        && ('function' === typeof getAp(o))
+        && (getConstructor(o) === getConstructor(getAp(o)(x => x))))
+            return true;
+        return false;
+    },
+
+    basic: () => getPair((x, me) => f => getConstructor(me)(f(x))),
+
+    fromFunctor: map => getPair((x, me) => g => g.chain(f => map(f))),
 };
 
-/**
- * Creates a Chain from a provided Functor type.
- * 
- * @param {Functor} F
- */
-Apply.fromChain = (x, self) => a => a.chain(f => self.map(f));
+
+export { Apply };
