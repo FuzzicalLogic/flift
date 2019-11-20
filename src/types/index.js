@@ -1,3 +1,3 @@
-export const {
+export const empty = {
 
 };
