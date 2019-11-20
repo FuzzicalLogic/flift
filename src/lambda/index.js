@@ -1,6 +1,3 @@
-export const empty = {
-
-};export { curry } from './curry';
 export * from './identity';
 export { curry } from './curry';
 export { delay } from './delay';
