@@ -1,7 +1,7 @@
 import * as F from '../lambda';
 
 /** The key name as defined by convention and the spec. */
-const DROP_KEY = 'map';
+const DROP_KEY = 'drop';
 
 const { curry, oo: { get, pair } } = F;
 let getPair = curry(pair)(DROP_KEY);
