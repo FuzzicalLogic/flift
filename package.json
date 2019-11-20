@@ -5,5 +5,8 @@
   "main": "src/esm-bridge.js",
   "author": {
     "name": ""
+  },
+  "dependencies": {
+    "esm": "^3.2.25"
   }
 }
