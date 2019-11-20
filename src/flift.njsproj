@@ -28,11 +28,47 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="algebra\Apply.js" />
+    <Content Include="algebra\Chain.js" />
+    <Content Include="algebra\Droppable.js" />
+    <Content Include="algebra\Foldable.js" />
+    <Content Include="algebra\Functor.js" />
+    <Content Include="algebra\index.js" />
+    <Content Include="algebra\Monoid.js" />
+    <Content Include="algebra\Semigroup.js" />
+    <Content Include="algebra\Setoid.js" />
+    <Content Include="algebra\TypeCategory.js" />
     <Content Include="index.js" />
     <Content Include="esm-bridge.js">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="lambda\compact.js" />
+    <Content Include="lambda\compose.js" />
+    <Content Include="lambda\constant.js" />
+    <Content Include="lambda\curry.js" />
+    <Content Include="lambda\delay.js" />
+    <Content Include="lambda\identity.js" />
+    <Content Include="lambda\index.js" />
+    <Content Include="lambda\map.js" />
+    <Content Include="lambda\oo\get.js" />
+    <Content Include="lambda\oo\index.js" />
+    <Content Include="lambda\orElse.js" />
+    <Content Include="lambda\pipe.js" />
+    <Content Include="lambda\reduce.js" />
+    <Content Include="lambda\route\index.js" />
+    <Content Include="lambda\route\mirror.js" />
+    <Content Include="lambda\route\split.js" />
+    <Content Include="lambda\route\tryCatch.js" />
+    <Content Include="lambda\self.js" />
     <Content Include="package.json" />
+    <Content Include="types\index.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="algebra\" />
+    <Folder Include="lambda\" />
+    <Folder Include="lambda\oo\" />
+    <Folder Include="lambda\route\" />
+    <Folder Include="types\" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
 </Project>
