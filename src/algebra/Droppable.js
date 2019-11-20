@@ -14,8 +14,8 @@ const Droppable = {
 		return false;
 	},
     alias: ['cata', 'fold'],
-	basic: () => getPair((me, x) => f => f(x)),
-    custom: f => getPair(f)
+	basic: () => getPair(x => f => f(x)),
+    from: f => getPair(f)
 }
 
 export { Droppable };
