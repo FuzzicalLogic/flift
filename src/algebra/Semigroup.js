@@ -29,3 +29,5 @@ const Semigroup = {
      */
     from: f => getPair(f),
 };
+
+export { Semigroup };
