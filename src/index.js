@@ -1,3 +1,4 @@
-export const test = {
-    test: 42
-};
+export * from './types';
+
+export * as lambda from './lambda';
+export * as algebra from './algebra';
