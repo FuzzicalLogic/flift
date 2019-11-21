@@ -8,6 +8,7 @@ export * from './Foldable';
 
 export * from './Semigroup';
 export * from './Monoid';
+export * from './Group';
 
 export * from './Functor';
 //export * from './Profunctor'; //(Functor) > .promap
