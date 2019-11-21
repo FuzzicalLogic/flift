@@ -5,7 +5,7 @@ export * from './Setoid';
 export * from './Ord';
 
 export * from './Foldable';
-//export * from './Traversable'; //(Foldable, Functor) > .traverse
+export * from './Traversable';
 
 export * from './Semigroup';
 export * from './Monoid';
@@ -21,7 +21,7 @@ export * from './Comonad';
 //export * from './Bifunctor'; //(Functor) > .bimap
 export * from './Apply';
 export * from './Chain';
-export * from './Applicative'; //(Apply) > .of
+export * from './Applicative';
 //export * from './ChainRec'; //(Apply) > .chainRec
 export * from './Monad';
 
