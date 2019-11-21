@@ -11,6 +11,8 @@ export * from './Semigroup';
 export * from './Monoid';
 export * from './Group';
 
+export * from './Semigroupoid';
+
 export * from './Functor';
 //export * from './Profunctor'; //(Functor) > .promap
 //export * from './Extend'; //(Functor) > .extend

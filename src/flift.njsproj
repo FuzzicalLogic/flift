@@ -38,6 +38,7 @@
     <Content Include="algebra\index.js" />
     <Content Include="algebra\Group.js" />
     <Content Include="algebra\Monoid.js" />
+    <Content Include="algebra\Semigroupoid.js" />
     <Content Include="algebra\Semigroup.js" />
     <Content Include="algebra\Setoid.js" />
     <Content Include="algebra\TypeCategory.js" />
