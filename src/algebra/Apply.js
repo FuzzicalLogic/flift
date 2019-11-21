@@ -2,7 +2,7 @@ import * as F from '../lambda';
 import * as C from './';
 
 /** The key name as defined by convention and the spec. */
-const AP_KEY = 'drop';
+const AP_KEY = 'ap';
 
 const { curry, oo: { get, pair } } = F;
 let getPair = curry(pair)(AP_KEY);

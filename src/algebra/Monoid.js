@@ -1,21 +1,25 @@
-import { pipeSync } from '../lambda';
+import * as F from '../lambda';
+import * as C from './';
 
-/**
- * Creates a new Functor Type from a function. A Functor is the most basic of
- * the algebrae and when mapped will automatically recontextualize the result
- * to a new instance of the Type.
- * 
- * @param {any} fMap The function that is used to map any function to the value.
- */
-export const Monoid = (concat, empty) => {
-	let algebra = {
-		concat: concat
-	}
-	let exported = x => ({
-		concat: pipeSync(algebra.concat(x), exported)
-	});
-	exported.empty = () => exported(empty);
-	exported.algebra = algebra;
-	return exported;
+/** The key name as defined by convention and the spec. */
+const EMPTY_KEY = 'empty';
+
+const { constant, curry, oo: { get, pair } } = F;
+let getPair = curry(pair)(EMPTY_KEY);
+let getConstructor = get('constructor');
+let getEmpty = get(EMPTY_KEY);
+
+const { Semigroup } = C;
+
+const Monoid = {
+    [Symbol.hasInstance]: o => {
+        if ((o instanceof Semigroup)
+        && (typeof getEmpty(getConstructor(o)) === "function")
+        && (getConstructor(getEmpty(o)()) === getConstructor(o)))
+            return true;
+        return false;
+    },
+    empty: v => getPair(constant(v))
 };
-Monoid.fromSemigroup = (semigroup, empty) => Monoid(semigroup.algebra.concat, empty)
+
+export { Monoid };
