@@ -9,11 +9,11 @@ let getPair = curry(pair)(CHAIN_KEY);
 let getChain = get(CHAIN_KEY);
 let getConstructor = get('constructor');
 
-const { Functor } = C;
+const { Apply } = C;
 
 const Chain = {
 	[Symbol.hasInstance]: (o) => {
-		if ((o instanceof Functor)
+        if ((o instanceof Apply)
 		&& ('function' === typeof getChain(o)))
 			return true;
 		return false;
