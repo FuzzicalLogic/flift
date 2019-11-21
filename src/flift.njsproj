@@ -31,6 +31,7 @@
     <Content Include="algebra\Comonad.js" />
     <Content Include="algebra\Extend.js" />
     <Content Include="algebra\Alternative.js" />
+    <Content Include="algebra\ChainRec.js" />
     <Content Include="algebra\Traversable.js" />
     <Content Include="algebra\Plus.js" />
     <Content Include="algebra\Applicative.js" />

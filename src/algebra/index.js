@@ -22,7 +22,7 @@ export * from './Comonad';
 export * from './Apply';
 export * from './Chain';
 export * from './Applicative';
-//export * from './ChainRec'; //(Apply) > .chainRec
+export * from './ChainRec';
 export * from './Monad';
 
 export * from './Alt';
