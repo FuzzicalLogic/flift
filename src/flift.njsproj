@@ -28,6 +28,7 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="algebra\Alternative.js" />
     <Content Include="algebra\Plus.js" />
     <Content Include="algebra\Applicative.js" />
     <Content Include="algebra\Alt.js" />

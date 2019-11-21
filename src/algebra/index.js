@@ -27,4 +27,4 @@ export * from './Monad';
 
 export * from './Alt';
 export * from './Plus';
-//export * from './Alternative'; //(Applicative, Plus)
+export * from './Alternative';
