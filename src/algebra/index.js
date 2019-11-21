@@ -2,6 +2,7 @@ export * from './Droppable';
 
 export * from './TypeCategory';
 export * from './Setoid';
+export * from './Ord';
 
 export * from './Foldable';
 //export * from './Traversable'; //(Foldable, Functor) > .traverse
