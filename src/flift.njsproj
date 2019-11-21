@@ -28,12 +28,14 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="algebra\Applicative.js" />
     <Content Include="algebra\Apply.js" />
     <Content Include="algebra\Chain.js" />
     <Content Include="algebra\Droppable.js" />
     <Content Include="algebra\Foldable.js" />
     <Content Include="algebra\Functor.js" />
     <Content Include="algebra\index.js" />
+    <Content Include="algebra\Group.js" />
     <Content Include="algebra\Monoid.js" />
     <Content Include="algebra\Semigroup.js" />
     <Content Include="algebra\Setoid.js" />
@@ -52,6 +54,13 @@
     <Content Include="lambda\map.js" />
     <Content Include="lambda\oo\get.js" />
     <Content Include="lambda\oo\index.js" />
+    <Content Include="lambda\oo\mergeAll.js" />
+    <Content Include="lambda\oo\merge.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="lambda\oo\pair.js">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="lambda\orElse.js" />
     <Content Include="lambda\pipe.js" />
     <Content Include="lambda\reduce.js" />

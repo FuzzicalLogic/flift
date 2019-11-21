@@ -16,8 +16,8 @@ export * from './Functor';
 //export * from './Comonad'; //(Extend) > .extract
 //export * from './Bifunctor'; //(Functor) > .bimap
 export * from './Apply';
-//export * from './Applicative'; //(Apply) > .of
 export * from './Chain';
+export * from './Applicative'; //(Apply) > .of
 //export * from './ChainRec'; //(Apply) > .chainRec
 //export * from './Monad'; //(Applicative, Chain)
 
