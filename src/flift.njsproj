@@ -29,6 +29,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="algebra\Applicative.js" />
+    <Content Include="algebra\Category.js" />
     <Content Include="algebra\Ord.js" />
     <Content Include="algebra\Apply.js" />
     <Content Include="algebra\Chain.js" />

@@ -12,6 +12,7 @@ export * from './Monoid';
 export * from './Group';
 
 export * from './Semigroupoid';
+export * from './Category';
 
 export * from './Functor';
 //export * from './Profunctor'; //(Functor) > .promap
