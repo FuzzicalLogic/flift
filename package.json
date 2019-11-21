@@ -1,6 +1,6 @@
 {
   "name": "@fuzzicallogic/flift",
-  "version": "0.35.0",
+  "version": "0.36.0",
   "description": "flift",
   "main": "src/esm-bridge.js",
   "author": {
