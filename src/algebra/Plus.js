@@ -1,25 +1,27 @@
 import * as F from '../lambda';
-import * as C from './';
+import * as C from '.';
 
 /** The key name as defined by convention and the spec. */
-const KEY = 'alt';
+const KEY = 'zero';
 
 const { curry, oo: { get, pair } } = F;
 let getPair = curry(pair)(KEY);
-let getAlt = get(KEY);
+let getZero = get(KEY);
 let getConstructor = get('constructor');
 
-const { Functor } = C;
+const { Alt } = C;
 /**
  * Creates a Chain that implements the Functor specification.
  * 
  * @param {any} g 
  */
-const Alt = {
+const Plus = {
     [Symbol.hasInstance]: o => {
-        if ((o instanceof Functor)
-        && ('function' === typeof getAlt(o))
-        && (getConstructor(o) === getConstructor(getAlt(o)(x => x))))
+        let P = getConstructor(o);
+        let f = getZero(P);
+        if ((o instanceof Alt)
+        && ('function' === typeof f)
+        && (P === getConstructor(f())))
             return true;
         return false;
     },
@@ -27,4 +29,4 @@ const Alt = {
 };
 
 
-export { Alt };
+export { Plus };

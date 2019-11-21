@@ -26,5 +26,5 @@ export * from './Applicative'; //(Apply) > .of
 export * from './Monad';
 
 export * from './Alt';
-//export * from './Plus'; //(Functor) > static.zero
+export * from './Plus';
 //export * from './Alternative'; //(Applicative, Plus)
