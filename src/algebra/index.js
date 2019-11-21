@@ -25,6 +25,6 @@ export * from './Applicative'; //(Apply) > .of
 //export * from './ChainRec'; //(Apply) > .chainRec
 export * from './Monad';
 
-//export * from './Alt'; //(Functor) > .alt
+export * from './Alt';
 //export * from './Plus'; //(Functor) > static.zero
 //export * from './Alternative'; //(Applicative, Plus)
