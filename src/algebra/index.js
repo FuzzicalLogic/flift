@@ -17,7 +17,7 @@ export * from './Category';
 export * from './Functor';
 //export * from './Profunctor'; //(Functor) > .promap
 export * from './Extend';
-//export * from './Comonad'; //(Extend) > .extract
+export * from './Comonad';
 //export * from './Bifunctor'; //(Functor) > .bimap
 export * from './Apply';
 export * from './Chain';
