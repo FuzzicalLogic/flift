@@ -14,7 +14,7 @@ const { Extend } = C;
  * 
  * @param {any} g 
  */
-const Extend = {
+const Comonad = {
     [Symbol.hasInstance]: o => {
         if ((o instanceof Extend)
         && ('function' === typeof getKey(o)))
@@ -25,4 +25,4 @@ const Extend = {
 };
 
 
-export { Extend };
+export { Comonad };
