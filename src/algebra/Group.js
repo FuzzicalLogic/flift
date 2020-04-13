@@ -13,7 +13,7 @@ const { Monoid } = C;
 
 const Group = {
     [Symbol.hasInstance]: o => {
-        if ((o instanceof Group)
+        if ((o instanceof Monoid)
         && (typeof getInvert(o) === "function")
         && (getConstructor(getInvert(o)()) === getConstructor(o)))
             return true;
