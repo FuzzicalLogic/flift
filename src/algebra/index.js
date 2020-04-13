@@ -9,7 +9,7 @@ export * from './Traversable';
 
 export * from './Semigroup';
 export * from './Monoid';
-export * from './Group';
+//export * from './Group';
 
 export * from './Semigroupoid';
 export * from './Category';
