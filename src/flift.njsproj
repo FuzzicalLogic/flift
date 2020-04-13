@@ -81,6 +81,9 @@
     <Content Include="lambda\route\tryCatch.js" />
     <Content Include="lambda\self.js" />
     <Content Include="package.json" />
+    <Content Include="types\Any.js">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="types\index.js" />
   </ItemGroup>
   <ItemGroup>
