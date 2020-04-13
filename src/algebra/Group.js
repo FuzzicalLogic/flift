@@ -11,9 +11,9 @@ let getInvert = get(INVERT_KEY);
 
 const { Monoid } = C;
 
-const Monoid = {
+const Group = {
     [Symbol.hasInstance]: o => {
-        if ((o instanceof Monoid)
+        if ((o instanceof Group)
         && (typeof getInvert(o) === "function")
         && (getConstructor(getInvert(o)()) === getConstructor(o)))
             return true;
@@ -22,4 +22,4 @@ const Monoid = {
     from: f => getPair(f)
 };
 
-export { Monoid };
+export { Group };
