@@ -4,9 +4,6 @@ export * from './TypeCategory';
 export * from './Setoid';
 export * from './Ord';
 
-export * from './Foldable';
-export * from './Traversable';
-
 export * from './Semigroup';
 export * from './Monoid';
 export * from './Group';
@@ -24,6 +21,9 @@ export * from './Chain';
 export * from './Applicative';
 export * from './ChainRec';
 export * from './Monad';
+
+export * from './Foldable';
+export * from './Traversable';
 
 export * from './Alt';
 export * from './Plus';
